@@ -1,4 +1,6 @@
 @import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
 *{
     box-sizing: border-box;
 }
@@ -6,74 +8,15 @@ html{
     font-family: 'Work Sans', sans-serif;
 }
 .page{
+    min-height: 100vh;
     width: 1400px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .top-section{
     background-color: $pink-color;
     padding-top: 39px;
 }
-.header{
-    margin: auto;
-    display: flex;
-    width: 1140px;
-    height: 62px;
-    &__button{
-        height: 48px;
-        width: 160px;
-        border: none;
-        border-radius: 2px;
-        background-color: $blue-color;
-        margin-left: 56px;
-        font-size: 18px;
-        color: white;
-        font-weight: 700;
-    }
-}
-.logo{
-    display: flex;
-    &__img{
-        margin-right: 15px;
-        height: 60px;
-        width: 60px;
-        border-radius: 14px;
-    }
-    &__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__name{
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
-    }
-    &__description{
-        font-size: 18px;
-        line-height: 25px;
-    }
-}
 
-.navigation{
-   margin-left: auto;
-    margin-top: 7px;
-    &__item{
-        margin-right: 50px;
-    }
-    &__item-selected{
-        color: $black-color;
-        font-weight: 700;
-    }
-    &__item-last{
-        margin-right: 0px;
 
-    }
-
-    &__drop-down{
-        margin-left: 11px;
-        display: inline-block;
-        background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
-        height: 5px;
-        width: 8px;
-    }
-}

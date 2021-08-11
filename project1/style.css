@@ -1,21 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Work Sans", sans-serif;
-}
-
-.page {
-  width: 1400px;
-  margin: auto;
-}
-
-.top-section {
-  background-color: #F3C6BD;
-  padding-top: 39px;
-}
-
+/*----colors----*/
+/*----urls----*/
+/*header*/
 .header {
   margin: auto;
   display: flex;
@@ -64,9 +49,10 @@ html {
 }
 .navigation__item {
   margin-right: 50px;
+  text-decoration: none;
+  color: #2B292D;
 }
 .navigation__item-selected {
-  color: #2B292D;
   font-weight: 700;
 }
 .navigation__item-last {
@@ -78,6 +64,76 @@ html {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
   height: 5px;
   width: 8px;
+}
+
+/*footer*/
+.footer {
+  margin: auto;
+  margin-bottom: 0;
+  width: 100%;
+}
+.footer__line {
+  border-top: 1px solid #2B292D;
+  opacity: 0.1;
+}
+
+.footer-links {
+  width: 1140px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.social-links {
+  margin-left: auto;
+}
+.social-links__link {
+  margin-left: 20px;
+}
+.social-links__fb {
+  width: 18px;
+  height: 17px;
+}
+.social-links__linkedin {
+  width: 18px;
+  height: 17px;
+}
+.social-links__twitter {
+  width: 21px;
+  height: 16px;
+}
+
+.terms {
+  font-size: 14;
+  line-height: 22;
+}
+.terms__item {
+  text-decoration: none;
+  color: #2B292D;
+  opacity: 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  background-color: #F3C6BD;
+  padding-top: 39px;
 }
 
 /*# sourceMappingURL=style.css.map */
