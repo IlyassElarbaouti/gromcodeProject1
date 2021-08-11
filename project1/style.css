@@ -41,6 +41,8 @@
 .logo__description {
   font-size: 18px;
   line-height: 25px;
+  color: #2B292D;
+  opacity: 0.6;
 }
 
 .navigation {
@@ -76,6 +78,75 @@
   border-top: 1px solid #2B292D;
   opacity: 0.1;
 }
+.footer__text {
+  color: #2B292D99;
+  opacity: 0.6;
+  margin-top: 26px;
+  height: 85px;
+  width: 360px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.footer-downloads {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 59px;
+}
+.footer-downloads__ios {
+  margin-right: 10px;
+  height: 40px;
+  width: 135px;
+}
+.footer-downloads__android {
+  height: 40px;
+  width: 135px;
+}
+
+.footer-description {
+  margin-left: 129px;
+  margin-right: 126px;
+  width: 360px;
+  height: 236px;
+}
+
+.footer-navigation {
+  display: flex;
+  height: 338px;
+  width: 1140px;
+  margin-right: auto;
+  padding-top: 44px;
+  padding-bottom: 59px;
+}
+
+.extra-nav {
+  width: 265px;
+  padding-top: 16px;
+}
+
+.footer-products-label {
+  margin-bottom: 18px;
+  line-height: 28px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-products {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-product {
+  font-size: 18px;
+  line-height: 28px;
+  color: #2B292D99;
+  opacity: 0.6;
+}
+
+.extra-nav-second {
+  margin-left: 29px;
+}
 
 .footer-links {
   width: 1140px;
@@ -83,7 +154,7 @@
   line-height: 50px;
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .social-links {
@@ -107,9 +178,9 @@
 
 .terms {
   font-size: 14;
-  line-height: 22;
 }
 .terms__item {
+  margin-right: 22px;
   text-decoration: none;
   color: #2B292D;
   opacity: 60%;
@@ -117,6 +188,7 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
