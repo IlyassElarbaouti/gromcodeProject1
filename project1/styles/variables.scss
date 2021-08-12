@@ -6,3 +6,26 @@ $black-color:#2B292D;
 
 /*----urls----*/
 $img-dropdown:url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
+
+
+
+.btn-action{
+    height: 48px;
+    width: 160px;
+    border: none;
+    border-radius: 2px;
+    background-color: $blue-color;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+.btn-description{
+    height: 48px;
+    width: 160px;
+    border: none;
+    border-radius: 2px;
+    color: $blue-color;
+    font-size: 18px;
+    backgroung-color: white;
+    font-weight: 700;
+}
