@@ -18,7 +18,7 @@
   border-radius: 2px;
   color: #3040C4;
   font-size: 18px;
-  backgroung-color: white;
+  background-color: white;
   font-weight: 700;
 }
 
@@ -206,7 +206,7 @@
   width: 1140px;
   margin: auto;
   height: 533px;
-  margin-bottom: 126px;
+  margin-bottom: 77px;
 }
 .headline__title {
   height: 165px;
@@ -250,6 +250,7 @@
 }
 
 html {
+  color: #2B292D;
   font-family: "Work Sans", sans-serif;
 }
 
