@@ -1,11 +1,73 @@
 /*header*/
+@import 'breakpoints';
+
+
+
+
+
+
 .header{
+    margin: auto;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    &__button{
+        display: none;
+    }
+    &__menu-button{
+        width: 58px;
+        margin-left: auto;
+        background: none;
+        border: none;
+        border-left:1px solid #2B292D26;
+
+    }
+}
+.logo{
+    display: flex;
+    &__img{
+        margin: auto;
+        margin-left: 15px;
+        margin-right: 13px;
+        height: 48px;
+        width: 48px;
+        border-radius: 14px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    &__description{
+       display: none;
+    }
+}
+
+.navigation{
+display: none;
+}
+
+
+@include mobile{
+.header{
+    background: none;
     margin: auto;
     display: flex;
     width: 1140px;
     height: 62px;
     &__button{
         margin-left: 56px;
+        display: inline-block;
+    }
+    &__menu-button{
+        display: none;
+
     }
 }
 .logo{
@@ -27,6 +89,7 @@
         font-weight: 700;
     }
     &__description{
+        display: block;
         font-size: 18px;
         line-height: 25px;
         color: $black-color;
@@ -35,6 +98,7 @@
 }
 
 .navigation{
+    display: block;
    margin-left: auto;
     margin-top: 7px;
     &__item{
@@ -58,4 +122,5 @@
         height: 5px;
         width: 8px;
     }
+}
 }

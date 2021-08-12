@@ -9,21 +9,35 @@
 @import 'about';
 @import 'customers';
 @import 'features';
+@import 'breakpoints';
 html{
     color:$black-color;
     font-family: 'Work Sans', sans-serif;
 }
 .page{
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section{
+    background-color: $pink-color;
+}
+
+@include mobile{
+    .top-section{
+    background-color: $pink-color;
+    padding-top: 39px;
+}
+    .page{
+    min-height: 100vh;
     width: 1400px;
     margin: auto;
     display: flex;
     flex-direction: column;
-}
-.top-section{
-    background-color: $pink-color;
-    padding-top: 39px;
-}
+}}
 
 
 

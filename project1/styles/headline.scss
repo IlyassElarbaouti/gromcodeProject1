@@ -1,4 +1,56 @@
+@import 'breakpoints';
+
+
+
 .headline{
+    padding-top: 35px;
+    width: 100vw;
+    &__title{
+        width: 290px;
+        height: 205px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        margin: auto;
+        letter-spacing: -0.31px;
+    }
+    &__description{
+        margin: auto;
+        margin-top:24px ;
+        height: 172px;
+        width: 290px;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+     &__actions{
+        display: flex;
+        flex-direction: column;
+    }
+    &__banner{
+        position: relative;
+
+    }
+    &__banner-img{
+        width: 100%;
+        margin-top: 33px;
+        margin-bottom: 38px;
+    }
+}
+.btn-action-headline{
+    margin: auto;
+    width: 290px;
+}
+.btn-description-headline{
+    margin:auto;
+    margin-top: 15px;
+    width: 290px;
+}
+
+
+
+@include mobile{
+    .headline{
     position: relative;
     padding-top: 76px;
     width: 1140px;
@@ -6,6 +58,7 @@
     height:533px;
     margin-bottom: 77px;
     &__title{
+        width:auto;
         height: 165px;
         font-size: 80px;
         font-weight: 700;
@@ -14,11 +67,16 @@
         letter-spacing: -0.5px;
     }
     &__description{
+        margin: 0;
         margin-top:34px ;
         height: 102px;
         width: 456px;
         font-size: 24px;
         line-height: 34px;
+    }
+    &__actions{
+        display: block;
+        margin-top: 58px;
     }
     &__banner{
         position: absolute;
@@ -27,15 +85,22 @@
         z-index: 0;
 
     }
-}
-.btn-action-headline{
-    margin: 0;
-}
-.btn-description-headline{
-    margin-left: 10px;
+     &__banner-img{
+        width: 796px;
+        margin: 0px;
+    }
 }
 .headline-info{
     z-index: 2;
     position: relative;
     width:754px;
+}
+.btn-action-headline{
+    margin: 0;
+    width: 160px;
+}
+.btn-description-headline{
+    margin-left: 10px;
+    width: 160px;
+}
 }
