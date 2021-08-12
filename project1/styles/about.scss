@@ -1,0 +1,22 @@
+.about{
+    background-color: #F4F5F7;
+;
+}
+.about-container{
+    margin:77px 131px 76px 130px;
+    display: flex;
+    height: 102px;
+    justify-content: space-between;
+}
+.article{
+    width: 555px;
+    &__title,&__text{
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+    }
+    &__title{
+        margin-bottom: 6px;
+        font-weight: 700;
+    }
+}

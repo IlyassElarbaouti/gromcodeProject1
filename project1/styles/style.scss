@@ -1,11 +1,14 @@
-@import 'variables';
-@import 'header';
-@import 'footer';
-@import 'headline';
 *{
     box-sizing: border-box;
     text-decoration: none;
 }
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'headline';
+@import 'about';
+@import 'customers';
+
 html{
     color:$black-color;
     font-family: 'Work Sans', sans-serif;
@@ -21,5 +24,6 @@ html{
     background-color: $pink-color;
     padding-top: 39px;
 }
+
 
 
