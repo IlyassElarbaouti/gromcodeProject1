@@ -1,13 +1,55 @@
+@import 'breakpoints';
+
 .customers{
-    width: 1140px;
-    margin:  30px auto 106px auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    &__row{
+        display: flex;
+    }
+    &__item{
+    height: 94px;
+    width:107px;
+    border-bottom: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    &__item:last-child{
+        border-right: none;
+    }
+}
+
+.logo{
+    max-width: 80%;
 }
 .logo-mashable{
     filter: brightness(0);
 }
 .logo-google{
     filter: brightness(0);
+}
+
+@include mobile{
+  .customers{
+    width: 1140px;
+    margin:auto;
+    padding-top: 30px;
+    padding-bottom: 106px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+     align-items: center;
+     &__item{
+
+    border: none;}
+    &__row{
+        flex: 1;
+        justify-content: space-evenly;
+        
+    }  
+}  
+
 }

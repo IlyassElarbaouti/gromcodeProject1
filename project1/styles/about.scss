@@ -1,14 +1,36 @@
+@import 'breakpoints';
 .about{
     background-color: #F4F5F7;
 ;
 }
 .about-container{
+    padding:46px 15px;
+}
+.article{
+    width: 290px;
+    margin: auto;
+    &__title,&__text{
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+    }
+    &__title{
+        margin-bottom: 6px;
+        font-weight: 700;
+    }
+}
+article:last-child{
+    margin-top: 20px;
+}
+@include mobile{
+.about-container{
+    padding: 0;
     margin:77px 131px 76px 130px;
     display: flex;
-    height: 102px;
     justify-content: space-between;
 }
 .article{
+    margin: 0;
     width: 555px;
     &__title,&__text{
         font-size: 22px;
@@ -19,4 +41,9 @@
         margin-bottom: 6px;
         font-weight: 700;
     }
+}
+article:last-child{
+    margin-top: 0px;
+
+}
 }
