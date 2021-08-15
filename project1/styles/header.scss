@@ -54,7 +54,7 @@ display: none;
 }
 
 
-@include mobile{
+@include desktop{
 .header{
     background: none;
     margin: auto;

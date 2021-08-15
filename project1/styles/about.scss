@@ -22,7 +22,7 @@
 article:last-child{
     margin-top: 20px;
 }
-@include mobile{
+@include desktop{
 .about-container{
     padding: 0;
     margin:77px 131px 76px 130px;

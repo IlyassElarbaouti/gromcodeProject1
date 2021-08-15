@@ -1,4 +1,4 @@
-
+@import 'breakpoints';
 .features{
     margin-bottom: 103px;
     position: relative;
@@ -87,4 +87,10 @@
     height: 597px;
     width: 686px;
     right: 0;
+}
+
+@include mobile{
+    .features{
+        display: none;
+    }
 }

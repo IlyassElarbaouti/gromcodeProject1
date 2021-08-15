@@ -8,15 +8,20 @@
     justify-content: center;
     &__row{
         display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+       
     }
     &__item{
     height: 94px;
-    width:107px;
+    min-width: 107px;
+    display: flex;
+    flex: 1;
     border-bottom: 1px solid #E3E3E3;
     border-right: 1px solid #E3E3E3;
-    display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
     &__item:last-child{
         border-right: none;
     }
@@ -32,7 +37,7 @@
     filter: brightness(0);
 }
 
-@include mobile{
+@include desktop{
   .customers{
     width: 1140px;
     margin:auto;
