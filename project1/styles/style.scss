@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @import 'breakpoints.scss';
 @import 'variables.scss';
 @import 'header.scss';
@@ -9,9 +13,7 @@
 @import 'tips.scss';
 @import 'order.scss';
 @import 'audience.scss';
-* {
-  box-sizing: border-box;
-}
+
 html {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
