@@ -1,106 +1,93 @@
-@import 'breakpoints';
+.headline {
+  width: 100%;
 
-
-
-.headline{
-    padding-top: 35px;
-    width: 100vw;
-    &__title{
-        width: 290px;
-        height: 205px;
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 50px;
-        margin: auto;
-        letter-spacing: -0.31px;
-    }
-    &__description{
-        margin: auto;
-        margin-top:24px ;
-        height: 172px;
-        width: 290px;
-        font-size: 24px;
-        line-height: 34px;
-        margin-bottom: 30px;
-    }
-     &__actions{
-        display: flex;
-        flex-direction: column;
-    }
-    &__banner{
-        position: relative;
-
-    }
-    &__banner-img{
-        width: 100%;
-        margin-top: 33px;
-        margin-bottom: 38px;
-    }
-}
-.btn-action-headline{
-    margin: auto;
-    width: 290px;
-}
-.btn-description-headline{
-    margin:auto;
-    margin-top: 15px;
-    width: 290px;
-}
-
-
-
-@include desktop{
-    .headline{
+  @include for-large-up {
     position: relative;
-    padding-top: 76px;
+    display: flex;
+    margin: auto;
+    margin-top: 84px;
+    padding-bottom: 77px;
     width: 1140px;
-    margin: auto;
-    height:533px;
-    margin-bottom: 77px;
-    &__title{
-        width:auto;
-        height: 165px;
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 78px;
-        margin: 0;
-        letter-spacing: -0.5px;
-    }
-    &__description{
-        margin: 0;
-        margin-top:34px ;
-        height: 102px;
-        width: 456px;
-        font-size: 24px;
-        line-height: 34px;
-    }
-    &__actions{
-        display: block;
-        margin-top: 58px;
-    }
-    &__banner{
-        position: absolute;
-        top:84px;
-        right: -106px;
-        z-index: 0;
+  }
 
+  &__content {
+    margin: 35px 15px 33px 15px;
+
+    @include for-large-up {
+      position: absolute;
+      z-index: 1;
+      margin: 0;
     }
-     &__banner-img{
-        width: 796px;
-        margin: 0px;
+  }
+
+  &__description {
+    margin-top: 24px;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-size: 24px;
+
+    @include for-large-up {
+      z-index: 1;
+      margin-bottom: 0;
+      margin-top: 34px;
+      width: 456px;
+      height: 102px;
+      line-height: 34px;
+      font-size: 24px;
     }
-}
-.headline-info{
-    z-index: 2;
-    position: relative;
-    width:754px;
-}
-.btn-action-headline{
+  }
+  &__title {
     margin: 0;
-    width: 160px;
-}
-.btn-description-headline{
-    margin-left: 10px;
-    width: 160px;
-}
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -0.3125px;
+
+    @include for-large-up {
+      z-index: 1;
+      margin: 0;
+      width: 754px;
+      height: 165px;
+      line-height: 78px;
+      font-size: 80px;
+      letter-spacing: -0.5px;
+    }
+  }
+  &__banner {
+      margin-top: 9px;
+    margin-bottom: 36px;
+    width: 100%;
+
+    @include for-large-up {
+      position: relative;
+      right: -105px;
+      top: 0;
+      margin-left: auto;
+      width: 796px;
+      height: 448px;
+    }
+  }
+  &__actions {
+    margin-top: 30px;
+
+    @include for-large-up {
+      display: flex;
+      margin-top: 38px;
+    }
+  }
+
+  &__actions-btn {
+    @include for-large-down {
+      width: 100% !important;
+    }
+
+    &:last-child {
+      margin-top: 15px;
+
+      @include for-large-up {
+        margin-left: 10px;
+        margin-top: 0;
+      }
+    }
+  }
 }

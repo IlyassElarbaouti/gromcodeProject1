@@ -1,60 +1,48 @@
-@import 'breakpoints';
+.customers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-.customers{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    &__row{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-       
-    }
-    &__item{
-    height: 94px;
-    min-width: 107px;
-    display: flex;
-    flex: 1;
-    border-bottom: 1px solid #E3E3E3;
-    border-right: 1px solid #E3E3E3;
-    align-items: center;
-    justify-content: center;
-}
-    &__item:last-child{
-        border-right: none;
-    }
-}
-
-.logo{
-    max-width: 80%;
-}
-.logo-mashable{
-    filter: brightness(0);
-}
-.logo-google{
-    filter: brightness(0);
-}
-
-@include desktop{
-  .customers{
-    width: 1140px;
-    margin:auto;
-    padding-top: 30px;
-    padding-bottom: 106px;
+  @include for-large-up {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-     align-items: center;
-     &__item{
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 106px;
+    width: 1140px;
+    align-items: center;
+  }
 
-    border: none;}
-    &__row{
-        flex: 1;
-        justify-content: space-evenly;
-        
-    }  
-}  
+  &__row {
+    display: flex;
+    @include for-large-up {
+      flex: 1;
+      justify-content: space-around;
+    }
+  }
 
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 94px;
+    width: 107px;
+    align-items: center;
+    border-bottom: 1px solid $color-light-grey;
+    border-right: 1px solid $color-light-grey;
+
+    @include for-large-up {
+      border: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__logo {
+    max-width: 70%;
+    filter: brightness(0);
+  }
 }

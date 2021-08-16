@@ -1,126 +1,125 @@
-/*header*/
-@import 'breakpoints';
+.top-section {
+  background-color: $color-pink;
 
+  @include for-large-up {
+    padding-top: 39px;
+    background-color: $color-pink;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  width: 100%;
+  height: 64px;
+  background-color: $color-white;
 
-
-
-
-
-.header{
+  @include for-large-up {
+    display: flex;
     margin: auto;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    height: 64px;
-    &__button{
-        display: none;
-    }
-    &__menu-button{
-        width: 58px;
-        margin-left: auto;
-        background: none;
-        border: none;
-        border-left:1px solid #2B292D26;
-
-    }
-}
-.logo{
-    display: flex;
-    &__img{
-        margin: auto;
-        margin-left: 15px;
-        margin-right: 13px;
-        height: 48px;
-        width: 48px;
-        border-radius: 14px;
-    }
-    &__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__name{
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
-    }
-    &__description{
-       display: none;
-    }
-}
-
-.navigation{
-display: none;
-}
-
-
-@include desktop{
-.header{
-    background: none;
-    margin: auto;
-    display: flex;
     width: 1140px;
     height: 62px;
-    &__button{
-        margin-left: 56px;
-        display: inline-block;
-    }
-    &__menu-button{
-        display: none;
+    background-color: $color-pink;
+  }
 
+  &__button {
+    display: none;
+
+    @include for-large-up {
+      display: block;
     }
+  }
+
+  &__menu-button {
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #00000026;
+
+    @include for-large-up {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
+  }
 }
-.logo{
+
+.logo {
+  display: flex;
+
+  &__image {
+    margin-right: 13px;
+    width: 48px;
+    height: 48px;
+
+    @include for-large-up {
+      margin-right: 15px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__name {
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &__description {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+      line-height: 25px;
+      font-size: 18px;
+      color: $color-black;
+      opacity: 0.6;
+    }
+  }
+  &__text {
     display: flex;
-    &__img{
-        margin-right: 15px;
-        height: 60px;
-        width: 60px;
-        border-radius: 14px;
-    }
-    &__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &__name{
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 700;
-    }
-    &__description{
-        display: block;
-        font-size: 18px;
-        line-height: 25px;
-        color: $black-color;
-        opacity: 0.6;
-    }
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
 }
+.navigation {
+  display: none;
 
-.navigation{
+  @include for-large-up {
     display: block;
-   margin-left: auto;
     margin-top: 7px;
-    &__item{
-        margin-right: 50px;
-        text-decoration: none;
-        color: $black-color;
-    }
-    &__item-selected{
-        
-        font-weight: 700;
-    }
-    &__item-last{
-        margin-right: 0px;
+    margin-left: auto;
+    margin-right: 75px;
+    padding: 0;
+  }
 
+  &__item {
+    margin-right: 38px;
+    line-height: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    color: $color-black;
+
+    &:last-child {
+      margin-right: 0;
     }
 
-    &__drop-down{
-        margin-left: 11px;
-        display: inline-block;
-        background-image: $img-dropdown;
-        height: 5px;
-        width: 8px;
+    &_selected {
+      font-weight: 700;
     }
-}
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin-left: 11px;
+    width: 8px;
+    height: 5px;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
+  }
 }
